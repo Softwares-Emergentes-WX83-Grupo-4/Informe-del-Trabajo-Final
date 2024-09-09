@@ -544,25 +544,25 @@ Se realizó un event-storming como equipo y se lograron identificar los siguient
 
 **Iniciar detección de gestos faciales**
 
-![Imagen](https://gyazo.com/8438e11684422fcff18ecb1e4699c32d.png)
+![Imagen](https://gyazo.com/8438e11684422fcff18ecb1e4699c32d.jpg)
 
 Para iniciar la detección de gestos faciales, el usuario deberá interactuar con la interfaz gráfica de usuario de la aplicación de escritorio. De esta forma, podrá iniciar la sesión de evaluación, la cual, a su vez, registrará la fecha y hora en la que se está generando esta misma. Luego de esto, el bounded context de Sesión enviará una orden al bounded context de Detección para iniciar la detección facial, y luego iniciar la detección de gestos faciales.
 
 **Finalizar detección de gestos faciales**
 
-![Imagen](https://gyazo.com/2023a48d080f86d02f5cb067d2985134.png)
+![Imagen](https://gyazo.com/2023a48d080f86d02f5cb067d2985134.jpg)
 
 Para finalizar la detección de gestos faciales, el usuario deberá interactuar con la interfaz gráfica de usuario de la aplicación de escritorio. De esta forma, podrá finalizar la sesión, y esta, a su vez, registrará la fecha y hora de finalización, para posteriormente enviar, al bounded context de Detección, órdenes de finalización de detección facial y de envío de datos crudos al módulo de procesamiento.
 
 **Procesar datos obtenidos**
 
-![Imagen](https://gyazo.com/4a2f54305c4121651e4f005d253a8bd9.png)
+![Imagen](https://gyazo.com/4a2f54305c4121651e4f005d253a8bd9.jpg)
 
 Para procesar los datos obtenidos de la detección de gestos faciales, el bounded context de Detección enviará estos datos crudos al bounded context de Procesamiento junto a una orden para iniciar el procesamiento de los datos. Una vez el bounded context de Procesamiento haya recibido la orden, usará los datos de la detección facial para obtener las métricas de cuales han sido los gestos faciales más prevalecientes, las conclusiones y un resumen general.
 
 **Registrar resultados obtenidos**
 
-![Imagen](https://gyazo.com/42b083c6f7f751729afefd776220680e.png)
+![Imagen](https://gyazo.com/42b083c6f7f751729afefd776220680e.jpg)
 
 Para registrar los resultados obtenidos durante la evaluación, el bounded context de Procesamiento enviará una orden al bounded context de Resultados para registrar las conclusiones y el resumen generado en la base de datos de la aplicación.
 
@@ -570,23 +570,23 @@ Para registrar los resultados obtenidos durante la evaluación, el bounded conte
 
 **Sesión**
 
-![Imagen](https://gyazo.com/3f5f24b7d6e859c20a0c3b3e7253df5c.png)
+![Imagen](https://gyazo.com/3f5f24b7d6e859c20a0c3b3e7253df5c.jpg)
 
 **Detección**
 
-![Imagen](https://gyazo.com/6ccc82e10796345f42512429a1651910.png)
+![Imagen](https://gyazo.com/6ccc82e10796345f42512429a1651910.jpg)
 
 **Procesamiento**
 
-![Imagen](https://gyazo.com/f0d6557493052d5411fee8128615eedb.png)
+![Imagen](https://gyazo.com/f0d6557493052d5411fee8128615eedb.jpg)
 
 **Resultados**
 
-![Imagen](https://gyazo.com/6fbb9ab4ecf8101ea3b0d62a937db3dc.png)
+![Imagen](https://gyazo.com/6fbb9ab4ecf8101ea3b0d62a937db3dc.jpg)
 
 ### Context Mapping
 
-![Imagen](https://gyazo.com/027a6d917076e435405ad29b81f20327.png)
+![Imagen](https://gyazo.com/027a6d917076e435405ad29b81f20327.jpg)
 
 ## Software Architecture
 
