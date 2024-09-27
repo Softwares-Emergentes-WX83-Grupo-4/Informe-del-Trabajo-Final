@@ -38,112 +38,112 @@
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
-  - [Startup Profile](#startup-profile)
-    - [Descripción de la Startup](#descripción-de-la-startup)
-    - [Perfiles de integrantes del equipo](#perfiles-de-integrantes-del-equipo)
-  - [Solution Profile](#solution-profile)
-    - [Antecedentes y problemática](#antecedentes-y-problemática)
-    - [Lean UX Process](#lean-ux-process)
-      - [Lean UX Problem Statements](#lean-ux-problem-statements)
-      - [Lean UX Assumptions](#lean-ux-assumptions)
-      - [Lean UX Hypothesis Statements](#lean-ux-hypothesis-statements)
-      - [Lean UX Canvas](#lean-ux-canvas)
-  - [Segmentos objetivo](#segmentos-objetivo)
+  - [1.1. Startup Profile](#11-startup-profile)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-  - [Competidores](#competidores)
-    - [Análisis competitivo](#análisis-competitivo)
-    - [Estrategias y tácticas frente a competidores](#estrategias-y-tácticas-frente-a-competidores)
-  - [Entrevistas](#entrevistas)
-    - [Diseño de entrevistas](#diseño-de-entrevistas)
-    - [Registro de entrevistas](#registro-de-entrevistas)
-    - [Análisis de entrevistas](#análisis-de-entrevistas)
-  - [Needfinding](#needfinding)
-    - [User Personas](#user-personas)
-    - [User Task Matrix](#user-task-matrix)
-    - [Empathy Mapping](#empathy-mapping)
-    - [As-is Scenario Mapping](#as-is-scenario-mapping)
-    - [Ubiquitous Language](#ubiquitous-language)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. Empathy Mapping](#233-empathy-mapping)
+    - [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
+  - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [To-Be Scenario Mapping](#to-be-scenario-mapping)
-    - [User Stories](#user-stories)
-    - [Impact Mapping](#impact-mapping)
-    - [Product Backlog](#product-backlog)
+  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+  - [3.2. User Stories](#32-user-stories)
+  - [3.3. Impact Mapping](#33-impact-mapping)
+  - [3.4. Product Backlog](#34-product-backlog)
 - [Capítulo IV: Strategic-Level Software Design](#capítulo-iv-strategic-level-software-design)
-  - [Strategic-Level Attribute-Driven Design](#strategic-level-attribute-driven-design)
-    - [Design Purpose](#design-purpose)
-    - [Attribute-Driven Design Inputs\*\*](#attribute-driven-design-inputs)
-      - [Primary Functionality (Primary User Stories)](#primary-functionality-primary-user-stories)
-      - [Quality Attribute Scenarios](#quality-attribute-scenarios)
-      - [Constraints](#constraints)
-    - [Architectural Drivers Backlog](#architectural-drivers-backlog)
-    - [Architectural Design Decisions](#architectural-design-decisions)
-    - [Quality Attribute Scenario Refinements](#quality-attribute-scenario-refinements)
-  - [Strategic-Level Domain-Driven Design](#strategic-level-domain-driven-design)
-    - [Event Storming](#event-storming)
-    - [Candidate Context Discovery](#candidate-context-discovery)
-    - [Domain Message Flows Modeling](#domain-message-flows-modeling)
-    - [Bounded Context Canvases](#bounded-context-canvases)
-    - [Context Mapping](#context-mapping)
-  - [Software Architecture](#software-architecture)
-    - [Software Architecture System Landscape Diagram](#software-architecture-system-landscape-diagram)
-    - [Software Architecture Context Level Diagrams](#software-architecture-context-level-diagrams)
-    - [Software Architecture Container Level Diagrams](#software-architecture-container-level-diagrams)
-    - [Software Architecture Deployment Diagrams](#software-architecture-deployment-diagrams)
+  - [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
+    - [4.1.1. Design Purpose](#411-design-purpose)
+    - [4.1.2. Attribute-Driven Design Inputs\*\*](#412-attribute-driven-design-inputs)
+      - [4.1.2.1. Primary Functionality (Primary User Stories)](#4121-primary-functionality-primary-user-stories)
+      - [4.1.2.2. Quality Attribute Scenarios](#4122-quality-attribute-scenarios)
+      - [4.1.2.3. Constraints](#4123-constraints)
+    - [4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
+    - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
+    - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
+  - [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
+    - [4.2.1. Event Storming](#421-event-storming)
+    - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
+    - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
+    - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
+    - [4.2.5. Context Mapping](#425-context-mapping)
+  - [4.3. Software Architecture](#43-software-architecture)
+    - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
+    - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
+    - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
+    - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
 - [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
-  - [Bounded Context: Sesion](#bounded-context-sesion)
-    - [Domain Layer](#domain-layer)
-    - [Interface Layer](#interface-layer)
-    - [Application Layer](#application-layer)
-    - [Infrastructure Layer](#infrastructure-layer)
-    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams)
-    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams)
-      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams)
-      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram)
-  - [Bounded Context: Deteccion](#bounded-context-deteccion)
-    - [Domain Layer](#domain-layer-1)
-    - [Interface Layer](#interface-layer-1)
-    - [Application Layer](#application-layer-1)
-    - [Infrastructure Layer](#infrastructure-layer-1)
-    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams-1)
-    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-1)
-      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-1)
-      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-1)
-  - [Bounded Context: Procesamiento](#bounded-context-procesamiento)
-    - [Domain Layer](#domain-layer-2)
-    - [Interface Layer](#interface-layer-2)
-    - [Application Layer](#application-layer-2)
-    - [Infrastructure Layer](#infrastructure-layer-2)
-    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams-2)
-    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-2)
-      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-2)
-      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-2)
-  - [Bounded Context: Resultados](#bounded-context-resultados)
-    - [Domain Layer](#domain-layer-3)
-    - [Interface Layer](#interface-layer-3)
-    - [Application Layer](#application-layer-3)
-    - [Infrastructure Layer](#infrastructure-layer-3)
-    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams-3)
-    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-3)
-      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-3)
-      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-3)
+  - [5.1. Bounded Context: Sesion](#51-bounded-context-sesion)
+    - [5.1.1. Domain Layer](#511-domain-layer)
+    - [5.1.2. Interface Layer](#512-interface-layer)
+    - [5.1.3. Application Layer](#513-application-layer)
+    - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+    - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+    - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
+      - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+      - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+  - [5.2. Bounded Context: Deteccion](#52-bounded-context-deteccion)
+    - [5.2.1. Domain Layer](#521-domain-layer)
+    - [5.2.2. Interface Layer](#522-interface-layer)
+    - [5.2.3. Application Layer](#523-application-layer)
+    - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+    - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+    - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+      - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+      - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+  - [5.3. Bounded Context: Procesamiento](#53-bounded-context-procesamiento)
+    - [5.3.1. Domain Layer](#531-domain-layer)
+    - [5.3.2. Interface Layer](#532-interface-layer)
+    - [5.3.3. Application Layer](#533-application-layer)
+    - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+    - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+    - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+      - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+      - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+  - [5.4. Bounded Context: Resultados](#54-bounded-context-resultados)
+    - [5.4.1. Domain Layer](#541-domain-layer)
+    - [5.4.2. Interface Layer](#542-interface-layer)
+    - [5.4.3. Application Layer](#543-application-layer)
+    - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+    - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+    - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+      - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+      - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
 - [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
-  - [Style Guidelines](#style-guidelines)
-    - [General Style Guidelines](#general-style-guidelines)
-    - [Web, Mobile \& Devices Style Guidelines](#web-mobile--devices-style-guidelines)
-  - [Information Architecture](#information-architecture)
-    - [Labeling Systems](#labeling-systems)
-    - [Searching Systems](#searching-systems)
-    - [SEO Tags and Meta Tags](#seo-tags-and-meta-tags)
-    - [Navigation Systems](#navigation-systems)
-  - [Landing Page UI Design](#landing-page-ui-design)
-    - [Landing Page Wireframe](#landing-page-wireframe)
-    - [Landing Page Mock-up](#landing-page-mock-up)
-  - [Applications UX/UI Design](#applications-uxui-design)
-    - [Applications Wireframes](#applications-wireframes)
-    - [Applications Wireflow Diagrams](#applications-wireflow-diagrams)
-    - [Application Mock-ups](#application-mock-ups)
-    - [Applications User Flow Diagrams](#applications-user-flow-diagrams)
-  - [Application Prototyping](#application-prototyping)
+  - [6.1. Style Guidelines](#61-style-guidelines)
+    - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
+    - [6.1.2. Web, Mobile \& Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+  - [6.2. Information Architecture](#62-information-architecture)
+    - [6.2.1. Labeling Systems](#621-labeling-systems)
+    - [6.2.2. Searching Systems](#622-searching-systems)
+    - [6.2.3. SEO Tags and Meta Tags](#623-seo-tags-and-meta-tags)
+    - [6.2.4. Navigation Systems](#624-navigation-systems)
+  - [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+    - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+    - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
+  - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+    - [6.4.1. Applications Wireframes](#641-applications-wireframes)
+    - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+    - [6.4.3. Application Mock-ups](#643-application-mock-ups)
+    - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.5. Application Prototyping](#65-application-prototyping)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -157,9 +157,9 @@
 
 # Capítulo I: Introducción
 
-## Startup Profile
+## 1.1. Startup Profile
 
-### Descripción de la Startup
+### 1.1.1. Descripción de la Startup
 
 Nuestra startup tiene como misión mejorar la calidad de la investigación de mercado a través de tecnología avanzada que elimina el sesgo humano. Nos enfocamos en el desarrollo de una aplicación de escritorio que utiliza una cámara para registrar y analizar los gestos faciales de los participantes durante la prueba de productos. Esta solución automatiza el análisis de expresiones, proporcionando información más objetiva y útil para la toma de decisiones empresariales.
 
@@ -171,7 +171,7 @@ Nuestra misión es revolucionar la investigación de mercado al aplicar tecnolog
 
 Nuestra visión es ser líderes en tecnología de análisis facial, transformando la forma en que las empresas comprenden y responden a las necesidades y emociones de sus consumidores. Aspiramos a empoderar a las empresas con soluciones tecnológicas de vanguardia que optimicen sus estrategias de mercado y contribuyan al desarrollo económico.
 
-### Perfiles de integrantes del equipo
+### 1.1.2. Perfiles de integrantes del equipo
 
 **Andrés Doig Apostol (u201712256)**
 
@@ -193,9 +193,9 @@ Nuestra visión es ser líderes en tecnología de análisis facial, transformand
 
 ![Imgur](https://i.gyazo.com/dfe1d07a5f4f455fa469181c9726bfe2.jpg)
 
-## Solution Profile
+## 1.2. Solution Profile
 
-### Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
 
 **Who ¿Quiénes van a ser los beneficiarios?**
   
@@ -225,9 +225,9 @@ Nuestra visión es ser líderes en tecnología de análisis facial, transformand
 
 - El impacto de este problema es significativo, ya que la falta de precisión en los datos puede llevar a decisiones equivocadas en las fases de diseño y marketing, afectando los resultados comerciales. Además, las empresas invierten tiempo y recursos considerables en realizar estudios de mercado que no siempre proporcionan un retorno de valor en términos de información confiable.
 
-### Lean UX Process
+### 1.2.2. Lean UX Process
 
-#### Lean UX Problem Statements
+#### 1.2.2.1. Lean UX Problem Statements
 
 **Problem Statement 1:**<br>
 En el ámbito de la investigación de mercado, las empresas enfrentan el reto de obtener retroalimentación auténtica y confiable de los consumidores durante las pruebas de productos. Los métodos tradicionales, como los focus groups, dependen en gran medida de las opiniones verbales de los participantes, las cuales pueden ser influenciadas por sesgos conscientes e inconscientes, lo que resulta en datos inexactos o poco fiables. Este problema compromete la capacidad de las empresas para tomar decisiones informadas sobre el diseño y comercialización de sus productos.
@@ -242,7 +242,7 @@ En la era digital, las empresas necesitan procesar grandes volúmenes de datos d
 
 ***¿Cómo podemos desarrollar una solución automatizada que capture y analice gestos faciales en tiempo real durante las pruebas de productos, permitiendo a las empresas obtener resultados rápidos, objetivos y libres de interpretación humana, mejorando así la eficiencia y la precisión en el análisis de la respuesta del consumidor?***
 
-#### Lean UX Assumptions
+#### 1.2.2.2. Lean UX Assumptions
 
 - Asumimos que las reacciones faciales son un indicador confiable de las emociones y preferencias de los consumidores durante las pruebas de productos.
 
@@ -264,7 +264,7 @@ En la era digital, las empresas necesitan procesar grandes volúmenes de datos d
 
 - Asumimos que una prueba gratuita de nuestra solución permitirá a las empresas experimentar el valor de nuestra tecnología, lo que aumentará su disposición a adoptarla en sus procesos regulares de investigación de mercado.
 
-#### Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 **Hypothesis 1:**<br>
 Creemos que si utilizamos cámaras para registrar gestos faciales durante las pruebas de productos, entonces capturaremos reacciones emocionales más auténticas y reduciremos el sesgo en la retroalimentación.
@@ -311,26 +311,26 @@ Creemos que si integramos nuestra aplicación con herramientas de CRM (Customer 
 **Hypothesis 15:**<br>
 Creemos que si ofrecemos una prueba gratuita de nuestra solución para empresas, entonces más organizaciones estarán dispuestas a probar la tecnología y convertirla en una parte integral de sus procesos de investigación de mercado.
 
-#### Lean UX Canvas 
+#### 1.2.2.4. Lean UX Canvas 
 
 ![Imagen](https://i.gyazo.com/9d2f4b9a77e9b73e606df73e1ac4bbe0.jpg)
 
-## Segmentos objetivo
+## 1.3. Segmentos objetivo
 
 El principal segmento objetivo de nuestra solución son los empresarios que buscan mejorar la precisión de los estudios de mercado. Estos usuarios requieren datos confiables para tomar decisiones informadas sobre la dirección de sus productos. Al ofrecer una herramienta que automatiza el análisis de las emociones de los consumidores, apuntamos a empresas que valoran la innovación tecnológica y la optimización de sus procesos de investigación de mercado.
 
 # Capítulo II: Requirements Elicitation & Analysis
 
-## Competidores
+## 2.1. Competidores
 
-### Análisis competitivo
+### 2.1.1. Análisis competitivo
 
 ![Imagen](https://i.gyazo.com/e974aec0594ac11cf43748a7e0f987f4.png)
 ![Imagen](https://gyazo.com/30a37a8184c263855504b0a8d50f57d2.png)
 ![Imagen](https://gyazo.com/5aabe722ac58484b17d0e55dda5a59b5.png)
 ![Imagen](https://gyazo.com/1565fef3ca6707ffa1173afb592c5aed.png)
 
-### Estrategias y tácticas frente a competidores
+### 2.1.2. Estrategias y tácticas frente a competidores
 
 **Diferenciación en Características:**<br>
 - Estrategia: Desarrollar características únicas en FacialTruth que no estén presentes en los productos de la competencia.
@@ -352,9 +352,9 @@ El principal segmento objetivo de nuestra solución son los empresarios que busc
 - Estrategia: Realiza campañas de marketing dirigidas y programas educativos para aumentar la conciencia sobre la importancia de un correcto análisis de la información  y los beneficios de FacialTruth.
 - Táctica: Utilizar publicidad en redes sociales, blogs de comunicaciones, y webinars para educar a los consumidores sobre los beneficios de un correcto estudio de mercado, y destacar cómo FacialTruth puede mejorar ese proceso.
      
-## Entrevistas 
+## 2.2. Entrevistas 
 
-### Diseño de entrevistas
+### 2.2.1. Diseño de entrevistas
 
 **Preguntas a empresarios**<br>
 - ¿Cómo llevas a cabo actualmente la evaluación de nuevos productos antes de lanzarlos al mercado?
@@ -368,7 +368,7 @@ El principal segmento objetivo de nuestra solución son los empresarios que busc
 - ¿Crees que una solución basada en el análisis de gestos faciales sería bien recibida por otros emprendedores o empresas en tu sector?
 - ¿Cómo crees que esta solución podría impactar la forma en que lanzas productos en el futuro?
 
-### Registro de entrevistas
+### 2.2.2. Registro de entrevistas
 
 Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn)
 
@@ -408,29 +408,29 @@ Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e
 
 **Resumen de la entrevista**: En la entrevista con Valeria Navarro, se discutió su enfoque para recolectar opiniones sobre su producto en su pequeña empresa. Valeria suele consultar a familiares o compañeros, y utiliza principalmente redes sociales o interacciones directas para obtener comentarios. Sin embargo, enfrenta dificultades en la recolección de opiniones, ya que no siempre son 100% transparentes y a veces son contradictorias, lo que complica su interpretación. A pesar de estos desafíos, Valeria considera que la idea de una aplicación que aborde el sesgo humano podría ser una excelente herramienta para mejorar su negocio.
 
-### Análisis de entrevistas 
+### 2.2.3. Análisis de entrevistas 
 
 En las entrevistas, se destacó un patrón común en la evaluación de productos y la recopilación de información de usuarios. Humberto Martínez mencionó el uso de herramientas como DataDog para monitorear funcionalidades, pero enfrentó desafíos con el mapeo y programación, y cuestionó la viabilidad de soluciones tecnológicas complejas como el análisis de gestos faciales. Salvador Torres y Valeria Navarro, por su parte, recurren a métodos informales como consultas con familiares y redes sociales, pero enfrentan problemas con la falta de transparencia y opiniones contradictorias. Ambos ven potencial en abordar el sesgo humano para mejorar sus negocios, sugiriendo que nuevas tecnologías o enfoques podrían optimizar la interpretación y uso de datos en la evolución de productos.
 
-## Needfinding
+## 2.3. Needfinding
 
-### User Personas
+### 2.3.1. User Personas
 
 ![Imagen](https://i.gyazo.com/473836f5dfa9f76ac64e411eab15599a.png)
 
-### User Task Matrix
+### 2.3.2. User Task Matrix
 
 ![Imagen](https://gyazo.com/7c3997254860e720f3c30fd037053b7c.png)
 
-### Empathy Mapping
+### 2.3.3. Empathy Mapping
 
 ![Imagen](https://i.gyazo.com/02d3b73742bb53e541daa3013a9e5683.png)
 
-### As-is Scenario Mapping
+### 2.3.4. As-is Scenario Mapping
 
 ![Imagen](https://i.gyazo.com/f014f86a0b88709c1777114f2212879d.png)
 
-### Ubiquitous Language
+## 2.4. Ubiquitous Language
 
 Dada la naturaleza de la solución existen términos que posiblemente para diversos individuos tengan conceptos diferentes, por ello, en está sección se definirán los conceptos claves con la finalidad de evitar malentendidos.
 
@@ -443,11 +443,11 @@ Dada la naturaleza de la solución existen términos que posiblemente para diver
 
 # Capítulo III: Requirements Specification
 
-### To-Be Scenario Mapping
+## 3.1. To-Be Scenario Mapping
 
 ![Imagen](https://gyazo.com/5213a5fe6d886002678372c21a743907.png)
 
-### User Stories
+## 3.2. User Stories
 
 ![Imagen](https://gyazo.com/203a1ab8021096505f803427b8182788.png)
 ![Imagen](https://gyazo.com/16b0bde03beb5e352d57928ca411e85a.png)
@@ -461,11 +461,11 @@ Dada la naturaleza de la solución existen términos que posiblemente para diver
 ![Imagen](https://gyazo.com/c998ddf5e8efb5e78b59ae51218e5c55.png)
 ![Imagen](https://gyazo.com/3b9a131c0ecd61a75df65fa7059dda15.png)
 
-### Impact Mapping
+## 3.3. Impact Mapping
 
 ![Imagen](https://gyazo.com/9ab8631e9867dea0b2861425c1766a9a.png)
 
-### Product Backlog
+## 3.4. Product Backlog
 
 ![Imagen](https://gyazo.com/888856ba686846b016839c8251797c0f.png)
 ![Imagen](https://gyazo.com/9e411dee1614596f83d23e1093274ff9.png)
@@ -474,16 +474,16 @@ Dada la naturaleza de la solución existen términos que posiblemente para diver
 
 # Capítulo IV: Strategic-Level Software Design
 
-## Strategic-Level Attribute-Driven Design
-### Design Purpose
+## 4.1. Strategic-Level Attribute-Driven Design
+### 4.1.1. Design Purpose
 
 **Propósito del Diseño**
 
 El propósito del diseño estratégico es crear una solución automatizada para el análisis de gestos faciales que elimine el sesgo humano y proporcione datos precisos en estudios de mercado. Esta solución busca ofrecer a las empresas una herramienta confiable para la captura y análisis de emociones durante las pruebas de productos, mejorando la calidad y precisión de los datos recolectados.
 
-### Attribute-Driven Design Inputs**
+### 4.1.2. Attribute-Driven Design Inputs**
 
-#### Primary Functionality (Primary User Stories)
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
 
 En esta sección se especifican las User Stories que tienen mayor relevancia en términos de requisitos funcionales y que impactan la arquitectura de la solución. Estas historias son fundamentales para la operación del sistema y han sido seleccionadas debido a su importancia en las decisiones de diseño.
 
@@ -492,7 +492,7 @@ En esta sección se especifican las User Stories que tienen mayor relevancia en 
 ![Imagen](https://gyazo.com/847d86ac0b4a2e95fb3564f4fc33bd04.png)
 ![Imagen](https://gyazo.com/9d9bd1738bebbc6fef57ff3adfe737cb.png)
 
-#### Quality Attribute Scenarios
+#### 4.1.2.2. Quality Attribute Scenarios
 
 **Scenario 1: Performance**
 
@@ -521,14 +521,14 @@ En esta sección se especifican las User Stories que tienen mayor relevancia en 
 - Respuesta: La interfaz debe permitir completar tareas en menos de 5 minutos.
 - Medida: Tiempo promedio para completar tareas y retroalimentación de usuarios.
 
-#### Constraints
+#### 4.1.2.3. Constraints
 
 - Restricción 1: La aplicación debe funcionar en sistemas operativos Windows y Linux, utilizando PyQt6 para la interfaz gráfica.
 - Restricción 2: La solución debe integrar el análisis de gestos faciales mediante Pyfeat, asegurando compatibilidad y eficiencia.
 - Restricción 3: Los datos deben ser almacenados en una base de datos PostgreSQL, cumpliendo con las normativas de privacidad y seguridad de datos.
 - Restricción 4: La aplicación debe garantizar un rendimiento adecuado incluso con grandes volúmenes de datos y mantener una alta precisión en el análisis facial.
 
-### Architectural Drivers Backlog
+### 4.1.3. Architectural Drivers Backlog
 
 **Driver 1: Precisión en el Análisis Facial**
 
@@ -548,14 +548,14 @@ En esta sección se especifican las User Stories que tienen mayor relevancia en 
 - Importancia para Stakeholders: Alta
 - Impacto en Architecture Technical Complexity: Alta
 
-### Architectural Design Decisions
+### 4.1.4. Architectural Design Decisions
 
 - Decisión 1: Implementar el análisis facial con Pyfeat, dado su enfoque especializado en el procesamiento de datos faciales.
 - Decisión 2: Utilizar PyQt6 para desarrollar una interfaz de usuario intuitiva y compatible con múltiples plataformas.
 - Decisión 3: Almacenar los datos en PostgreSQL para asegurar una base de datos robusta y segura.
 - Decisión 4: Implementar algoritmos de reconocimiento facial que proporcionen resultados en tiempo real para mejorar la eficiencia de los estudios de mercado.
 
-### Quality Attribute Scenario Refinements
+### 4.1.5. Quality Attribute Scenario Refinements
 
 **Scenario Refinement for Performance**
 
@@ -587,13 +587,13 @@ En esta sección se especifican las User Stories que tienen mayor relevancia en 
 - Questions: ¿Cómo se gestiona y se informa sobre los intentos de acceso no autorizado?
 - Issues: Verificar la robustez de las medidas de seguridad implementadas.
 
-## Strategic-Level Domain-Driven Design
+## 4.2. Strategic-Level Domain-Driven Design
 
-### Event Storming
+### 4.2.1. Event Storming
 
 ![Imagen](https://gyazo.com/75e9a1c084eb6c2ebb37b8493cfadb87.png)
 
-### Candidate Context Discovery
+### 4.2.2. Candidate Context Discovery
 
 Se realizó un event-storming como equipo y se lograron identificar los siguientes 4 bounded contexts:
 - Sesión: Se encarga de gestionar la creación y finalización de las sesiones de registro de gestos faciales.
@@ -603,7 +603,7 @@ Se realizó un event-storming como equipo y se lograron identificar los siguient
 
 ![Imagen](https://gyazo.com/48452c777f0d11318209574796a5a0a5.png)
 
-### Domain Message Flows Modeling
+### 4.2.3. Domain Message Flows Modeling
 
 **Iniciar detección de gestos faciales**
 
@@ -629,7 +629,7 @@ Para procesar los datos obtenidos de la detección de gestos faciales, el bounde
 
 Para registrar los resultados obtenidos durante la evaluación, el bounded context de Procesamiento enviará una orden al bounded context de Resultados para registrar las conclusiones y el resumen generado en la base de datos de la aplicación.
 
-### Bounded Context Canvases
+### 4.2.4. Bounded Context Canvases
 
 **Sesión**
 
@@ -647,33 +647,33 @@ Para registrar los resultados obtenidos durante la evaluación, el bounded conte
 
 ![Imagen](https://gyazo.com/6fbb9ab4ecf8101ea3b0d62a937db3dc.jpg)
 
-### Context Mapping
+### 4.2.5. Context Mapping
 
 ![Imagen](https://gyazo.com/027a6d917076e435405ad29b81f20327.jpg)
 
-## Software Architecture
+## 4.3. Software Architecture
 
-### Software Architecture System Landscape Diagram
+### 4.3.1. Software Architecture System Landscape Diagram
 
 ![Imagen](https://gyazo.com/f84a41544f1cb522b8634148c79dce82.png)
 
-### Software Architecture Context Level Diagrams
+### 4.3.2. Software Architecture Context Level Diagrams
 
 ![Imagen](https://gyazo.com/96e2773d5e555e41fe5b65b06ec3a92f.png)
 
-### Software Architecture Container Level Diagrams
+### 4.3.3. Software Architecture Container Level Diagrams
 
 ![Imagen](https://gyazo.com/093fd0a839e9067ed5558d96fe401b65.png)
 
-### Software Architecture Deployment Diagrams
+### 4.3.4. Software Architecture Deployment Diagrams
 
 ![Imagen](https://gyazo.com/034013a5645fc76e92a54617dc83bef9.png)
 
 # Capítulo V: Tactical-Level Software Design
 
-## Bounded Context: Sesion
+## 5.1. Bounded Context: Sesion
 
-### Domain Layer
+### 5.1.1. Domain Layer
 
 **Entities**
 
@@ -684,40 +684,40 @@ Para registrar los resultados obtenidos durante la evaluación, el bounded conte
 - ISesionRepository
 - ISesionService
 
-### Interface Layer
+### 5.1.2. Interface Layer
 
 **Controllers**
 
 - SesionsController
 
-### Application Layer
+### 5.1.3. Application Layer
 
 **Command Handlers**
 
 - CrearSesionCommandHandler
 - FinalizarSesionCommandHandler
 
-### Infrastructure Layer
+### 5.1.4. Infrastructure Layer
 
 Este bounded context no se comunica con un sistema externo.
 
-### Bounded Context Software Architecture Component Level Diagrams
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![](https://gyazo.com/eca8d4e45945bffb986afccc2ee7ebdc.jpg)
 
-### Bounded Context Software Architecture Code Level Diagrams
+### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### Bounded Context Domain Layer Class Diagrams
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![](https://gyazo.com/2c3ec586c6b7df5f556a88975e863cfa.png)
 
-#### Bounded Context Database Design Diagram
+#### 5.1.6.2. Bounded Context Database Design Diagram
 
 ![](https://gyazo.com/d999417b427a4ddfddd5a4acf1435ffc.png)
 
-## Bounded Context: Deteccion
+## 5.2. Bounded Context: Deteccion
 
-### Domain Layer
+### 5.2.1. Domain Layer
 
 **Entities**
 
@@ -728,39 +728,39 @@ Este bounded context no se comunica con un sistema externo.
 - IDeteccionRepository
 - IDeteccionService
 
-### Interface Layer
+### 5.2.2. Interface Layer
 
 **Controllers**
 
 - DeteccionesController
 
-### Application Layer
+### 5.2.3. Application Layer
 
 **Command Handlers**
 
 - RegistrarDeteccionCommandHandler
 
-### Infrastructure Layer
+### 5.2.4. Infrastructure Layer
 
 Este bounded context no se comunica con un sistema externo.
 
-### Bounded Context Software Architecture Component Level Diagrams
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![](https://gyazo.com/257486ed212eee44996ece9f4429f548.jpg)
 
-### Bounded Context Software Architecture Code Level Diagrams
+### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### Bounded Context Domain Layer Class Diagrams
+#### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![](https://gyazo.com/ec4f8b23bd86403ff1fee7f507ab1caa.png)
 
-#### Bounded Context Database Design Diagram
+#### 5.2.6.2. Bounded Context Database Design Diagram
 
 ![](https://gyazo.com/89501543c83db7f7646e4a0cdcf61295.png)
 
-## Bounded Context: Procesamiento
+## 5.3. Bounded Context: Procesamiento
 
-### Domain Layer
+### 5.3.1. Domain Layer
 
 **Entities**
 
@@ -771,39 +771,39 @@ Este bounded context no se comunica con un sistema externo.
 - IProcesamientoRepository
 - IProcesamientoService
 
-### Interface Layer
+### 5.3.2. Interface Layer
 
 **Controllers**
 
 - ProcesamientosController
 
-### Application Layer
+### 5.3.3. Application Layer
 
 **Command Handlers**
 
 - ProcesarDeteccionCommandHandler
 
-### Infrastructure Layer
+### 5.3.4. Infrastructure Layer
 
 Este bounded context no se comunica con un sistema externo.
 
-### Bounded Context Software Architecture Component Level Diagrams
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![](https://gyazo.com/964f4abe433abf34e729d252aea6c087.jpg)
 
-### Bounded Context Software Architecture Code Level Diagrams
+### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### Bounded Context Domain Layer Class Diagrams
+#### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![](https://gyazo.com/18a484642fc7f77f6e4513a714cb1da7.png)
 
-#### Bounded Context Database Design Diagram
+#### 5.3.6.2. Bounded Context Database Design Diagram
 
 ![](https://gyazo.com/d0f62cb97f5180bae5a946a0bdf96cb1.png)
 
-## Bounded Context: Resultados
+## 5.4. Bounded Context: Resultados
 
-### Domain Layer
+### 5.4.1. Domain Layer
 
 **Entities**
 
@@ -814,43 +814,43 @@ Este bounded context no se comunica con un sistema externo.
 - IResultadoRepository
 - IResultadoService
 
-### Interface Layer
+### 5.4.2. Interface Layer
 
 **Controllers**
 
 - ResultadosController
 
-### Application Layer
+### 5.4.3. Application Layer
 
 **Command Handlers**
 
 - GuardarResultadoCommandHandler
 
-### Infrastructure Layer
+### 5.4.4. Infrastructure Layer
 
 Este bounded context no se comunica con un sistema externo.
 
-### Bounded Context Software Architecture Component Level Diagrams
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 ![](https://gyazo.com/5e6faa3492adb98f114861e29e057917.jpg)
 
-### Bounded Context Software Architecture Code Level Diagrams
+### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### Bounded Context Domain Layer Class Diagrams
+#### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![](https://gyazo.com/1774d07d6f61657a62b8adf822b97657.png)
 
-#### Bounded Context Database Design Diagram
+#### 5.4.6.2. Bounded Context Database Design Diagram
 
 ![](https://gyazo.com/92e23ea6019b2c2f2f531d0808791bbd.png)
 
 # Capítulo VI: Solution UX Design
 
-## Style Guidelines
+## 6.1. Style Guidelines
 
 En esta sección se definen las guías de estilo para la interfaz de usuario de FacialTruth. Estas pautas establecen los principios visuales y de interacción que deben seguirse para asegurar una experiencia de usuario coherente, accesible y visualmente atractiva en todas las plataformas. El objetivo es crear una identidad visual distintiva y profesional, optimizando la legibilidad, la usabilidad y la consistencia en el diseño de la aplicación.
 
-### General Style Guidelines
+### 6.1.1. General Style Guidelines
 
 **Typography**
 
@@ -914,7 +914,7 @@ En esta sección se definen las guías de estilo para la interfaz de usuario de 
 - Textos alternativos descriptivos para todas las imágenes.
 - Navegación compatible con teclado.
 
-### Web, Mobile & Devices Style Guidelines
+### 6.1.2. Web, Mobile & Devices Style Guidelines
 
 **Responsive Design**
 - Mobile First Approach: Diseñar primero para dispositivos móviles y luego escalar a pantallas más grandes.
@@ -939,9 +939,9 @@ En esta sección se definen las guías de estilo para la interfaz de usuario de 
 - Evitar animaciones complejas en dispositivos móviles.
 - Utilizar transiciones suaves y rápidas (200-300ms) para cambios de estado en botones y formularios.
 
-## Information Architecture
+## 6.2. Information Architecture
 
-### Labeling Systems
+### 6.2.1. Labeling Systems
 
 En FacialTruth, hemos diseñado un sistema de etiquetado simple y coherente que organiza la navegación de nuestra página. Los ítems del menú son:
 - Inicio: Un punto de partida para conocer nuestra propuesta de valor y los beneficios de nuestra herramienta.
@@ -954,11 +954,11 @@ Este sistema busca ofrecer una experiencia de navegación clara y directa, permi
 
 ![](https://gyazo.com/727e540c76940bbd861ce8058999ba67.png)
 
-### Searching Systems
+### 6.2.2. Searching Systems
 
 En FacialTruth, nos enfocamos en ofrecer a los usuarios una experiencia de búsqueda intuitiva y eficiente dentro de nuestra aplicación. Para lograrlo, implementamos un sistema de búsqueda por palabra clave que permite a los usuarios encontrar rápidamente gestos específicos, emociones o resultados de pruebas. Además, incluimos filtros que facilitan la búsqueda, como el tipo de gesto (sonrisa, fruncir), el nivel de emoción (alto, medio, bajo) y el resultado de la prueba (aprobado, rechazado). Después de realizar una búsqueda, presentamos los resultados de manera clara y organizada, utilizando tarjetas con íconos representativos y breves descripciones, lo que les permite comprender la información de un vistazo.
 
-### SEO Tags and Meta Tags
+### 6.2.3. SEO Tags and Meta Tags
 
 **Landing Page**
 
@@ -971,13 +971,13 @@ En FacialTruth, nos enfocamos en ofrecer a los usuarios una experiencia de búsq
 - Authors: Al indicar quiénes somos parte del equipo de FacialTruth, aportamos credibilidad a la información presentada. Esto refuerza que somos los responsables de esta innovadora solución en la investigación de mercado.
   ![](https://gyazo.com/a35ca477eb6f25782ee0b50d57028fce.png)
 
-### Navigation Systems
+### 6.2.4. Navigation Systems
 
 En FacialTruth, nos esforzamos por crear una experiencia de navegación fluida y satisfactoria para los usuarios. Hemos diseñado una barra de navegación intuitiva que proporciona accesos directos a secciones clave como "Inicio", "Cómo Funciona", "Resultados" y "Contacto". Utilizamos breadcrumbs para que los usuarios puedan regresar fácilmente a secciones anteriores y mantener un sentido de orientación. Además, incluimos botones destacados con llamados a la acción, como "Iniciar Prueba" y "Solicitar Demo", que guían a los usuarios a realizar acciones específicas. Para enriquecer la experiencia, implementamos un scroll infinito que presenta contenido relevante a medida que los usuarios navegan hacia abajo en la página. Así, buscamos asegurar que cada interacción sea fluida y cumpla con las expectativas de los visitantes.
 
-## Landing Page UI Design
+## 6.3. Landing Page UI Design
 
-### Landing Page Wireframe
+### 6.3.1. Landing Page Wireframe
 
 Hemos creado una representación inicial en forma de bosquejo de baja fidelidad para la página de inicio de FacilTruth
 
@@ -986,7 +986,7 @@ Hemos creado una representación inicial en forma de bosquejo de baja fidelidad 
 ![](https://gyazo.com/4b0c1ef38f32481b2b3b8a4217a2bd12.png)
 ![](https://gyazo.com/6471718a5529a7c8fab77f9aa79b11df.png)
 
-### Landing Page Mock-up
+### 6.3.2. Landing Page Mock-up
 
 El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia en forma de Mock Up. A continuación, te presentamos una vista previa de nuestra propuesta:
 
@@ -995,12 +995,12 @@ El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia e
 ![](https://gyazo.com/bcfc8f9efe532992c99105546bd96a4a.png)
 ![](https://gyazo.com/7848f2435ec8dbabb5e2df23b1443bce.png)
 
-## Applications UX/UI Design
+## 6.4. Applications UX/UI Design
 
 Para mejor visualización, acceder al siguiente link: 
 [https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1](https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1 )
 
-### Applications Wireframes
+### 6.4.1. Applications Wireframes
 
 Dentro de toda la colección, se procederá a incluir algunos ejemplos:
 
@@ -1012,7 +1012,7 @@ PERFIL DE USUARIO: El usuario puede visualizar sus datos como Nombre , Apellido,
 ![](https://gyazo.com/36511fbe51cee38042454e79c6b6bd8e.png)
 ![](https://gyazo.com/46f33439df6e91badafcf74e152e9287.png)
 
-### Applications Wireflow Diagrams
+### 6.4.2. Applications Wireflow Diagrams
 
 ![](https://gyazo.com/57c74d60fe5a6e03dd28a2bfd2f0b50d.png)
 
@@ -1021,7 +1021,7 @@ Para una mejor visualización, ir al siguiente link:
 
 [https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1](https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1)
 
-### Application Mock-ups
+### 6.4.3. Application Mock-ups
 
 Algunos ejemplos basados en el futuro desarrollo de la solución:
 
@@ -1035,7 +1035,7 @@ Para una mejor visualización, ir al siguiente link:
 
 [https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1](https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1)
 
-### Applications User Flow Diagrams
+### 6.4.4. Applications User Flow Diagrams
 
 **Ventana de Inicio Sesión**
 
@@ -1061,9 +1061,11 @@ Para una mejor visualización, ir al siguiente link:
 
 ![](https://gyazo.com/79dd04605f211d32b7cd0b7f762c1bef.png)
 
-## Application Prototyping
+## 6.5. Application Prototyping
 
 ![](https://gyazo.com/7894c71dbcef7c36a88b3f76069f2dc5.png)
+
+Link del prototipo en Figma: [https://www.figma.com/proto/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=16-4383&node-type=canvas&t=tpuo3uapfiCQ5Iu8-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A137&starting-point-node-id=16%3A4383&share=1](https://www.figma.com/proto/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=16-4383&node-type=canvas&t=tpuo3uapfiCQ5Iu8-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A137&starting-point-node-id=16%3A4383&share=1)
 
 # Conclusiones
 
@@ -1078,3 +1080,7 @@ Para una mejor visualización, ir al siguiente link:
 Repositorio de github del informe: [https://github.com/Softwares-Emergentes-WX83-Grupo-4/Informe-del-Trabajo-Final](https://github.com/Softwares-Emergentes-WX83-Grupo-4/Informe-del-Trabajo-Final)
 
 Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn)
+
+Video de exposición TP1: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EeFRUiTBQQFKoue-Y1h9PncBIG2drO_8J1GyRbmsrP86Pg?e=AXgPh0](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EeFRUiTBQQFKoue-Y1h9PncBIG2drO_8J1GyRbmsrP86Pg?e=AXgPh0)
+
+Prototipo de la aplicación en Figma: [https://www.figma.com/proto/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=16-4383&node-type=canvas&t=tpuo3uapfiCQ5Iu8-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A137&starting-point-node-id=16%3A4383&share=1](https://www.figma.com/proto/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=16-4383&node-type=canvas&t=tpuo3uapfiCQ5Iu8-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A137&starting-point-node-id=16%3A4383&share=1)
