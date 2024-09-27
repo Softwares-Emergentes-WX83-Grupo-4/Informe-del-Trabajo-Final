@@ -30,6 +30,7 @@
 | Versión | Fecha | Autor | Descripción de modificación |
 |--------------|--------------|--------------|--------------|
 | 1           | 08/09/2024      | - Andrés Doig Apostol<br>- - Alonso Fernando Robles Astuñaupa<br>- Christian Jose Zeta Valenzuela<br>- Dámaris Jemima Tasayco Vilcamiza<br>- Erick Gabriel Urbizagstegui Alvarez    | Implementación del capítulo 1 al 4.      |
+| 2           | 27/09/2024      | - Andrés Doig Apostol<br>- - Alonso Fernando Robles Astuñaupa<br>- Christian Jose Zeta Valenzuela<br>- Dámaris Jemima Tasayco Vilcamiza<br>- Erick Gabriel Urbizagstegui Alvarez    | Implementación del capítulo 5 al 6. Corrección de errores de la entrega anterior.     |
 
 # Contenido
 
@@ -107,6 +108,42 @@
     - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-1)
       - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-1)
       - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-1)
+  - [Bounded Context: Procesamiento](#bounded-context-procesamiento)
+    - [Domain Layer](#domain-layer-2)
+    - [Interface Layer](#interface-layer-2)
+    - [Application Layer](#application-layer-2)
+    - [Infrastructure Layer](#infrastructure-layer-2)
+    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams-2)
+    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-2)
+      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-2)
+      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-2)
+  - [Bounded Context: Resultados](#bounded-context-resultados)
+    - [Domain Layer](#domain-layer-3)
+    - [Interface Layer](#interface-layer-3)
+    - [Application Layer](#application-layer-3)
+    - [Infrastructure Layer](#infrastructure-layer-3)
+    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams-3)
+    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-3)
+      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-3)
+      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-3)
+- [Capítulo VI: Solution UX Design](#capítulo-vi-solution-ux-design)
+  - [Style Guidelines](#style-guidelines)
+    - [General Style Guidelines](#general-style-guidelines)
+    - [Web, Mobile \& Devices Style Guidelines](#web-mobile--devices-style-guidelines)
+  - [Information Architecture](#information-architecture)
+    - [Labeling Systems](#labeling-systems)
+    - [Searching Systems](#searching-systems)
+    - [SEO Tags and Meta Tags](#seo-tags-and-meta-tags)
+    - [Navigation Systems](#navigation-systems)
+  - [Landing Page UI Design](#landing-page-ui-design)
+    - [Landing Page Wireframe](#landing-page-wireframe)
+    - [Landing Page Mock-up](#landing-page-mock-up)
+  - [Applications UX/UI Design](#applications-uxui-design)
+    - [Applications Wireframes](#applications-wireframes)
+    - [Applications Wireflow Diagrams](#applications-wireflow-diagrams)
+    - [Application Mock-ups](#application-mock-ups)
+    - [Applications User Flow Diagrams](#applications-user-flow-diagrams)
+  - [Application Prototyping](#application-prototyping)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -115,8 +152,8 @@
 
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4. | **TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4. | **TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4.<br><br> **TP1** <br><br> **Andrés Doig Apostol** <br> Durante el proyecto, he presentado los resultados de manera clara y objetiva, adaptando mi lenguaje a diferentes especialidades y niveles jerárquicos, facilitando así la comprensión y toma de decisiones. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el diseño de wireframes y mockups del landing page y de la aplicación principal de nuestra solución de software. <br><br> **Christian Jose Zeta Valenzuela** <br> Apoyó en la creación de diseños de puntos claves de nuestra solución, como el landing page y la aplicación principal. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Durante el proyecto, he presentado los resultados de los sistemas de etiquetado, navegación, búsqueda y SEO de manera clara y objetiva, utilizando un lenguaje apropiado para que todos los participantes pudieran comprender y aportar en la toma de decisiones efectivas. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realicé los diagramas de código de los bounded context. Para esto tuve que identificar los entities principales y los commandhandlers que se usarían. Asimismo, creé los diagramas de contenedores para cada bounded context. | <br><br>**TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución.<br><br>**TP1** <br><br> Se realizaron los capítulos 5 y 6. Esto conllevó a elaborar diseños de bajo nivel de cómo estarían compuestas las clases que constituirían los bounded contexts, así como crear los diseños de bases de datos. Asimismo, se pensó y materializó el diseño del landing page y la aplicación principal de nuestra solución de software. |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4.<br><br> **TP1** <br><br> **Andrés Doig Apostol** <br> He redactado informes técnicos con un lenguaje accesible y preciso, asegurando que todos los involucrados comprendan los resultados y avances del proyecto, independientemente de su especialidad o posición. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el diseño de wireframes y mockups del landing page y de la aplicación principal de nuestra solución de software. <br><br> **Christian Jose Zeta Valenzuela** <br> Apoyó en la creación de diseños de puntos claves de nuestra solución, como el landing page y la aplicación principal. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> He redactado descripciones técnicas sobre los sistemas de etiquetado, navegación, búsqueda y SEO con un lenguaje claro y conciso, garantizando que todos los participantes puedan entender los resultados de los sistemas previamente mencionados fomentando una colaboración más efectiva.<br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realicé los diagramas de código de los bounded context. Para esto tuve que identificar los entities principales y los commandhandlers que se usarían. Asimismo, creé los diagramas de contenedores para cada bounded context. | **TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución.<br><br>**TP1** <br><br> Se realizaron los capítulos 5 y 6. Esto conllevó a elaborar diseños de bajo nivel de cómo estarían compuestas las clases que constituirían los bounded contexts, así como crear los diseños de bases de datos. Asimismo, se pensó y materializó el diseño del landing page y la aplicación principal de nuestra solución de software. |
 
 # Capítulo I: Introducción
 
@@ -280,7 +317,7 @@ Creemos que si ofrecemos una prueba gratuita de nuestra solución para empresas,
 
 ## Segmentos objetivo
 
-El principal segmento objetivo de nuestra solución son los empresarios y los equipos de marketing que buscan mejorar la precisión de los estudios de mercado. Estos usuarios requieren datos confiables para tomar decisiones informadas sobre la dirección de sus productos. Al ofrecer una herramienta que automatiza el análisis de las emociones de los consumidores, apuntamos a empresas que valoran la innovación tecnológica y la optimización de sus procesos de investigación de mercado.
+El principal segmento objetivo de nuestra solución son los empresarios que buscan mejorar la precisión de los estudios de mercado. Estos usuarios requieren datos confiables para tomar decisiones informadas sobre la dirección de sus productos. Al ofrecer una herramienta que automatiza el análisis de las emociones de los consumidores, apuntamos a empresas que valoran la innovación tecnológica y la optimización de sus procesos de investigación de mercado.
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -333,6 +370,8 @@ El principal segmento objetivo de nuestra solución son los empresarios y los eq
 
 ### Registro de entrevistas
 
+Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn)
+
 **Entrevista 1**
 
 ![Imagen](https://i.gyazo.com/52fca163a4951167963578e286918102.png)
@@ -340,6 +379,8 @@ El principal segmento objetivo de nuestra solución son los empresarios y los eq
 **Entrevistador**: Christian Jose Zeta Valenzuela
 
 **Entrevistado**: Humberto Martinez
+
+**Timing**: 00:00
 
 **Resumen de la entrevista**: Durante la entrevista, se discutieron aspectos clave sobre la evaluación de productos y la recopilación de información de usuarios para mejorar la experiencia del cliente. La empresa utiliza herramientas como DataDog para monitorear el uso de funcionalidades y colabora estrechamente con el equipo de producto para definir métricas. Sin embargo, mapear y programar estos elementos presenta desafíos significativos. Aunque una solución tecnológica para analizar gestos faciales es interesante, se considera que sería costosa y difícil de sostener. A pesar de que las opiniones de los focus groups son valiosas, a veces no se alinean con la aceptación real del producto en el mercado, y se reconoció la necesidad de mejorar en la interpretación y uso de estos datos para la evolución de los productos.
 
@@ -351,6 +392,8 @@ El principal segmento objetivo de nuestra solución son los empresarios y los eq
 
 **Entrevistado**: Salvador Torres
 
+**Timing**: 05:36
+
 **Resumen de la entrevista**: Durante la entrevista con Salvador Torre, se abordaron sus métodos para evaluar productos, destacando que generalmente consulta con familiares o amigos cercanos y no utiliza herramientas formales, solo redes sociales o comunicación oral. Sin embargo, enfrenta el problema de que algunas personas no son completamente transparentes en sus opiniones sobre sus productos. Salvador vende barras energéticas y ha tenido experiencias negativas en el pasado donde no logró vender sus productos. Considera que la idea de abordar el sesgo humano es prometedora y podría ayudar a impulsar su microempresa, mejorando sus ventas y llevando su negocio al siguiente nivel.
 
 **Entrevista 3**
@@ -361,12 +404,13 @@ El principal segmento objetivo de nuestra solución son los empresarios y los eq
 
 **Entrevistado**: Valeria Nevado
 
+**Timing**: 15:03
+
 **Resumen de la entrevista**: En la entrevista con Valeria Navarro, se discutió su enfoque para recolectar opiniones sobre su producto en su pequeña empresa. Valeria suele consultar a familiares o compañeros, y utiliza principalmente redes sociales o interacciones directas para obtener comentarios. Sin embargo, enfrenta dificultades en la recolección de opiniones, ya que no siempre son 100% transparentes y a veces son contradictorias, lo que complica su interpretación. A pesar de estos desafíos, Valeria considera que la idea de una aplicación que aborde el sesgo humano podría ser una excelente herramienta para mejorar su negocio.
 
 ### Análisis de entrevistas 
 
 En las entrevistas, se destacó un patrón común en la evaluación de productos y la recopilación de información de usuarios. Humberto Martínez mencionó el uso de herramientas como DataDog para monitorear funcionalidades, pero enfrentó desafíos con el mapeo y programación, y cuestionó la viabilidad de soluciones tecnológicas complejas como el análisis de gestos faciales. Salvador Torres y Valeria Navarro, por su parte, recurren a métodos informales como consultas con familiares y redes sociales, pero enfrentan problemas con la falta de transparencia y opiniones contradictorias. Ambos ven potencial en abordar el sesgo humano para mejorar sus negocios, sugiriendo que nuevas tecnologías o enfoques podrían optimizar la interpretación y uso de datos en la evolución de productos.
-
 
 ## Needfinding
 
@@ -401,7 +445,7 @@ Dada la naturaleza de la solución existen términos que posiblemente para diver
 
 ### To-Be Scenario Mapping
 
-![Imagen](https://gyazo.com/5213a5fe6d886002678372c21a743907)
+![Imagen](https://gyazo.com/5213a5fe6d886002678372c21a743907.png)
 
 ### User Stories
 
@@ -714,12 +758,323 @@ Este bounded context no se comunica con un sistema externo.
 
 ![](https://gyazo.com/89501543c83db7f7646e4a0cdcf61295.png)
 
+## Bounded Context: Procesamiento
+
+### Domain Layer
+
+**Entities**
+
+- Procesamiento
+
+**Interfaces**
+
+- IProcesamientoRepository
+- IProcesamientoService
+
+### Interface Layer
+
+**Controllers**
+
+- ProcesamientosController
+
+### Application Layer
+
+**Command Handlers**
+
+- ProcesarDeteccionCommandHandler
+
+### Infrastructure Layer
+
+Este bounded context no se comunica con un sistema externo.
+
+### Bounded Context Software Architecture Component Level Diagrams
+
+![](https://gyazo.com/964f4abe433abf34e729d252aea6c087.jpg)
+
+### Bounded Context Software Architecture Code Level Diagrams
+
+#### Bounded Context Domain Layer Class Diagrams
+
+![](https://gyazo.com/18a484642fc7f77f6e4513a714cb1da7.png)
+
+#### Bounded Context Database Design Diagram
+
+![](https://gyazo.com/d0f62cb97f5180bae5a946a0bdf96cb1.png)
+
+## Bounded Context: Resultados
+
+### Domain Layer
+
+**Entities**
+
+- Resultado
+
+**Interfaces**
+
+- IResultadoRepository
+- IResultadoService
+
+### Interface Layer
+
+**Controllers**
+
+- ResultadosController
+
+### Application Layer
+
+**Command Handlers**
+
+- GuardarResultadoCommandHandler
+
+### Infrastructure Layer
+
+Este bounded context no se comunica con un sistema externo.
+
+### Bounded Context Software Architecture Component Level Diagrams
+
+![](https://gyazo.com/5e6faa3492adb98f114861e29e057917.jpg)
+
+### Bounded Context Software Architecture Code Level Diagrams
+
+#### Bounded Context Domain Layer Class Diagrams
+
+![](https://gyazo.com/1774d07d6f61657a62b8adf822b97657.png)
+
+#### Bounded Context Database Design Diagram
+
+![](https://gyazo.com/92e23ea6019b2c2f2f531d0808791bbd.png)
+
+# Capítulo VI: Solution UX Design
+
+## Style Guidelines
+
+En esta sección se definen las guías de estilo para la interfaz de usuario de FacialTruth. Estas pautas establecen los principios visuales y de interacción que deben seguirse para asegurar una experiencia de usuario coherente, accesible y visualmente atractiva en todas las plataformas. El objetivo es crear una identidad visual distintiva y profesional, optimizando la legibilidad, la usabilidad y la consistencia en el diseño de la aplicación.
+
+### General Style Guidelines
+
+**Typography**
+
+- Font Family: Utilizar fuentes sans-serif como Arial, Helvetica o Roboto para asegurar legibilidad y modernidad en la interfaz.
+- Font Sizes:
+  - Títulos principales (h1): 24-32 px.
+  - Subtítulos (h2, h3): 18-24 px.
+  - Texto de párrafo: 14-16 px.
+  - Etiquetas y botones: 12-14 px.
+- Line Height: 1.5 para párrafos y 1.2 para títulos.
+- Font Weight:
+  - Títulos: Bold (700).
+  - Texto de párrafo: Normal (400).
+  - Enlaces y botones: Semibold (600).
+**Color Palette**
+- Primary Colors:
+  - Azul (#0056b3) para elementos interactivos como botones y enlaces.
+  - Blanco (#FFFFFF) para fondos principales.
+  - Gris oscuro (#333333) para texto principal.
+- Secondary Colors:
+  - Naranja (#ff6600) para elementos de énfasis como llamadas a la acción.
+  - Verde (#00b300) para estados de éxito y mensajes de confirmación.
+- Background Colors:
+  - Fondo general: Gris claro (#f7f7f7).
+  - Fondos de secciones y tarjetas: Blanco (#FFFFFF).
+**Button Styles**
+- Primary Buttons:
+  - Fondo azul (#0056b3).
+  - Texto blanco (#FFFFFF).
+  - Bordes redondeados con un radio de 4px.
+  - Hover: Fondo azul oscuro (#003d80), sombra sutil.
+- Secondary Buttons:
+  - Fondo blanco (#FFFFFF).
+  - Borde azul (#0056b3).
+  - Texto azul (#0056b3).
+  - Hover: Fondo gris claro (#f0f0f0), borde azul más oscuro (#003d80).
+**Form Elements**
+- Inputs:
+  - Bordes redondeados con un radio de 4px.
+  - Fondo blanco (#FFFFFF) con borde gris claro (#cccccc).
+  - Al enfocar, borde azul (#0056b3).
+- Labels:
+  - Texto gris oscuro (#333333), tamaño 14px.
+- Checkboxes y Radios:
+  - Estilo moderno con borde redondeado y color de marca.
+**Spacing**
+- Padding y Margins:
+  - 16px para separaciones generales.
+  - 24px para contenedores grandes.
+- Grid System:
+  - Sistema de columnas 12, con márgenes de 16px entre columnas.
+- Iconography:
+  - Utilizar iconos simples y de línea clara.
+  - Tamaño de iconos entre 16-24 px, dependiendo de su uso.
+  - Color de iconos: Gris oscuro (#333333) o azul (#0056b3).
+**Imagery**
+- Imágenes deben tener alta calidad y resolución mínima de 72 dpi.
+- Usar imágenes que refuercen la identidad visual y que estén alineadas con los valores de la empresa.
+**Accessibility**
+- Contraste de color adecuado (al menos 4.5:1 para texto regular).
+- Textos alternativos descriptivos para todas las imágenes.
+- Navegación compatible con teclado.
+
+### Web, Mobile & Devices Style Guidelines
+
+**Responsive Design**
+- Mobile First Approach: Diseñar primero para dispositivos móviles y luego escalar a pantallas más grandes.
+- Breakpoints:
+  - Móvil pequeño: < 576px.
+  - Móvil grande: 576px - 768px.
+  - Tablets: 768px - 992px.
+  - Escritorio: > 992px.
+**Navigation**
+- Menú hamburguesa para dispositivos móviles.
+- Barras de navegación fijas en la parte superior para facilitar la usabilidad.
+- Usar breadcrumbs en pantallas más grandes para mostrar la ubicación actual del usuario.
+**Touch Targets**
+- Todos los elementos interactivos deben tener un área mínima de 48px x 48px para facilitar la interacción táctil.
+**Text Scaling**
+- Usar unidades relativas (em, rem) para asegurar que el texto se ajuste adecuadamente a diferentes tamaños de pantalla.
+- Botones y enlaces deben escalar proporcionalmente para mantenerse accesibles.
+**Images & Media**
+- Imágenes responsivas que cambian de tamaño según el dispositivo.
+- Uso de formatos eficientes (WebP, JPEG para imágenes; MP4 para videos).
+**Animations**
+- Evitar animaciones complejas en dispositivos móviles.
+- Utilizar transiciones suaves y rápidas (200-300ms) para cambios de estado en botones y formularios.
+
+## Information Architecture
+
+### Labeling Systems
+
+En FacialTruth, hemos diseñado un sistema de etiquetado simple y coherente que organiza la navegación de nuestra página. Los ítems del menú son:
+- Inicio: Un punto de partida para conocer nuestra propuesta de valor y los beneficios de nuestra herramienta.
+- Producto: Detalles sobre nuestra solución de análisis de gestos faciales y cómo mejoran la investigación de mercado.
+- Enfoque: Información sobre la misión, visión y el equipo detrás de FacialTruth.
+- Teams: Equipo que realiza la solución.
+- Contáctanos: Una sección para que los usuarios puedan comunicarse con nosotros para obtener más información o solicitar demos.
+
+Este sistema busca ofrecer una experiencia de navegación clara y directa, permitiendo a los usuarios acceder fácilmente a la información que necesitan. A continuación, puedes ver un ejemplo visual de cómo se presentan estos ítems en nuestra interfaz:
+
+![](https://gyazo.com/727e540c76940bbd861ce8058999ba67.png)
+
+### Searching Systems
+
+En FacialTruth, nos enfocamos en ofrecer a los usuarios una experiencia de búsqueda intuitiva y eficiente dentro de nuestra aplicación. Para lograrlo, implementamos un sistema de búsqueda por palabra clave que permite a los usuarios encontrar rápidamente gestos específicos, emociones o resultados de pruebas. Además, incluimos filtros que facilitan la búsqueda, como el tipo de gesto (sonrisa, fruncir), el nivel de emoción (alto, medio, bajo) y el resultado de la prueba (aprobado, rechazado). Después de realizar una búsqueda, presentamos los resultados de manera clara y organizada, utilizando tarjetas con íconos representativos y breves descripciones, lo que les permite comprender la información de un vistazo.
+
+### SEO Tags and Meta Tags
+
+**Landing Page**
+
+- Title: En este título, buscamos captar la atención de los usuarios y resumir nuestra misión en FacialTruth
+  ![](https://gyazo.com/20a307e58232e0caac79e81a722a6458.png)
+- Meta Tags Description: En esta descripción, queremos ofrecer un resumen atractivo de lo que hacemos. Nuestro objetivo es resaltar cómo nuestra tecnología de análisis de gestos faciales elimina el sesgo humano en la investigación de mercado.
+  ![](https://gyazo.com/6beccdfeaed4f4df904a676029c2be95.png)
+- Keywords: Aquí seleccionamos palabras clave que nuestros usuarios potenciales podrían buscar. Estas palabras son esenciales para aumentar nuestra visibilidad en los motores de búsqueda y conectar con quienes necesitan nuestros servicios.
+  ![](https://gyazo.com/90bb7b7ff6d0623ca9c473dbff3feccd.png)
+- Authors: Al indicar quiénes somos parte del equipo de FacialTruth, aportamos credibilidad a la información presentada. Esto refuerza que somos los responsables de esta innovadora solución en la investigación de mercado.
+  ![](https://gyazo.com/a35ca477eb6f25782ee0b50d57028fce.png)
+
+### Navigation Systems
+
+En FacialTruth, nos esforzamos por crear una experiencia de navegación fluida y satisfactoria para los usuarios. Hemos diseñado una barra de navegación intuitiva que proporciona accesos directos a secciones clave como "Inicio", "Cómo Funciona", "Resultados" y "Contacto". Utilizamos breadcrumbs para que los usuarios puedan regresar fácilmente a secciones anteriores y mantener un sentido de orientación. Además, incluimos botones destacados con llamados a la acción, como "Iniciar Prueba" y "Solicitar Demo", que guían a los usuarios a realizar acciones específicas. Para enriquecer la experiencia, implementamos un scroll infinito que presenta contenido relevante a medida que los usuarios navegan hacia abajo en la página. Así, buscamos asegurar que cada interacción sea fluida y cumpla con las expectativas de los visitantes.
+
+## Landing Page UI Design
+
+### Landing Page Wireframe
+
+Hemos creado una representación inicial en forma de bosquejo de baja fidelidad para la página de inicio de FacilTruth
+
+![](https://gyazo.com/1b6671e53f31b2a4d8670e31524a43db.png)
+![](https://gyazo.com/eb84c0bc6b4ef5eb1c2655d4b86453c4.png)
+![](https://gyazo.com/4b0c1ef38f32481b2b3b8a4217a2bd12.png)
+![](https://gyazo.com/6471718a5529a7c8fab77f9aa79b11df.png)
+
+### Landing Page Mock-up
+
+El Landing Page se desarrolló utilizando un prototipo de fidelidad intermedia en forma de Mock Up. A continuación, te presentamos una vista previa de nuestra propuesta:
+
+![](https://gyazo.com/99b37999f3e428acc1bb444aecb02593.png)
+![](https://gyazo.com/43c94d8a8fd67d17d963c301f1fe6adb.png)
+![](https://gyazo.com/bcfc8f9efe532992c99105546bd96a4a.png)
+![](https://gyazo.com/7848f2435ec8dbabb5e2df23b1443bce.png)
+
+## Applications UX/UI Design
+
+Para mejor visualización, acceder al siguiente link: 
+[https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1](https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1 )
+
+### Applications Wireframes
+
+Dentro de toda la colección, se procederá a incluir algunos ejemplos:
+
+PERFIL DE USUARIO: El usuario puede visualizar sus datos como Nombre , Apellido, Celular, Correo. El usuario podrá cambiar su foto de perfil presionando el botón. Cambiar foto de perfil ,también podrá actualizar sus datos presionando el botón Actualizar Datos y también podrá cerrar sesión en la cuenta presionando el botón Cerrar Sesión.
+
+![](https://gyazo.com/fe2000da1923fc53be15d69fa28845ce.png)
+![](https://gyazo.com/05d7ed291db5c76230913bee719140de.png)
+![](https://gyazo.com/d6fe08545128884a0bcdb0e39f5fba8c.png)
+![](https://gyazo.com/36511fbe51cee38042454e79c6b6bd8e.png)
+![](https://gyazo.com/46f33439df6e91badafcf74e152e9287.png)
+
+### Applications Wireflow Diagrams
+
+![](https://gyazo.com/57c74d60fe5a6e03dd28a2bfd2f0b50d.png)
+
+Como se puede visualizar, se presenta una imagen general del flujo de la solución.
+Para una mejor visualización, ir al siguiente link:
+
+[https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1](https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1)
+
+### Application Mock-ups
+
+Algunos ejemplos basados en el futuro desarrollo de la solución:
+
+![](https://gyazo.com/d19b4485fa8933397278f4b479430d11.png)
+![](https://gyazo.com/1d64ebf5175ea0fd0ec8affdf8bf3bc8.png)
+![](https://gyazo.com/2b9e5c9962c700b6e3f67b4e6ff1cbea.png)
+![](https://gyazo.com/0674024626a97f958409881ebbdf8340.png)
+![](https://gyazo.com/590cddd836e3d55fe5cddd81b65ee7a8.png)
+
+Para una mejor visualización, ir al siguiente link:
+
+[https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1](https://www.figma.com/design/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=3-137&t=NlIqntJ1exuV7doR-1)
+
+### Applications User Flow Diagrams
+
+**Ventana de Inicio Sesión**
+
+![](https://gyazo.com/1999b75419dc619e187ad6afaf0ac83e.png)
+
+**Ventana de Inicio Sesión (recuperar contraseña)**
+
+![](https://gyazo.com/bdc99a00d1f5a5e5069f6137fa999d42.png)
+
+**Página Inicio**
+
+![](https://gyazo.com/66818b9cdf9690ad29209cb14f432a6d.png)
+
+**Ventana Prueba**
+
+![](https://gyazo.com/30637a2fdfc256ccf244177c4ef61fad.png)
+
+**Ventana Resultado**
+
+![](https://gyazo.com/2c9b10d9b2c154a86b1fd179b8f83cc1.png)
+
+**Ventana Perfil**
+
+![](https://gyazo.com/79dd04605f211d32b7cd0b7f762c1bef.png)
+
+## Application Prototyping
+
+![](https://gyazo.com/7894c71dbcef7c36a88b3f76069f2dc5.png)
+
 # Conclusiones
+
+- Realizar un correcto Event Storming resulta clave para identificar los Bounded Contexts que compondrán la solución de Software.
+- La detección de gestos faciales se puede lograr mediante el uso de puntos claves en la cara de la persona que se ubique frente a la cámara, y su procesamiento mediante redes neuronales.
+- El diseño de la solución debe ser amigable para que pueda ser entendido por usuarios que no estén relacionados al desarrollo de software. Esto ayuda a que dichos usuarios no pierdan el interés en el producto.
 
 # Bibliografía
 
 # Anexos
 
-Repositorio de github: [https://github.com/Softwares-Emergentes-WX83-Grupo-4/Informe-del-Trabajo-Final](https://github.com/Softwares-Emergentes-WX83-Grupo-4/Informe-del-Trabajo-Final)
+Repositorio de github del informe: [https://github.com/Softwares-Emergentes-WX83-Grupo-4/Informe-del-Trabajo-Final](https://github.com/Softwares-Emergentes-WX83-Grupo-4/Informe-del-Trabajo-Final)
 
 Video de entrevistas: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EW67S70zZghIs5hZuvG582oBf4XPFGoNE1kYVbqRKvANBg?e=o2LFMn)
