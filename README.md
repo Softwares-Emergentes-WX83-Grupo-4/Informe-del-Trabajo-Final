@@ -88,6 +88,25 @@
     - [Software Architecture Context Level Diagrams](#software-architecture-context-level-diagrams)
     - [Software Architecture Container Level Diagrams](#software-architecture-container-level-diagrams)
     - [Software Architecture Deployment Diagrams](#software-architecture-deployment-diagrams)
+- [Capítulo V: Tactical-Level Software Design](#capítulo-v-tactical-level-software-design)
+  - [Bounded Context: Sesion](#bounded-context-sesion)
+    - [Domain Layer](#domain-layer)
+    - [Interface Layer](#interface-layer)
+    - [Application Layer](#application-layer)
+    - [Infrastructure Layer](#infrastructure-layer)
+    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams)
+    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams)
+      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams)
+      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram)
+  - [Bounded Context: Deteccion](#bounded-context-deteccion)
+    - [Domain Layer](#domain-layer-1)
+    - [Interface Layer](#interface-layer-1)
+    - [Application Layer](#application-layer-1)
+    - [Infrastructure Layer](#infrastructure-layer-1)
+    - [Bounded Context Software Architecture Component Level Diagrams](#bounded-context-software-architecture-component-level-diagrams-1)
+    - [Bounded Context Software Architecture Code Level Diagrams](#bounded-context-software-architecture-code-level-diagrams-1)
+      - [Bounded Context Domain Layer Class Diagrams](#bounded-context-domain-layer-class-diagrams-1)
+      - [Bounded Context Database Design Diagram](#bounded-context-database-design-diagram-1)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -605,6 +624,95 @@ Para registrar los resultados obtenidos durante la evaluación, el bounded conte
 ### Software Architecture Deployment Diagrams
 
 ![Imagen](https://gyazo.com/034013a5645fc76e92a54617dc83bef9.png)
+
+# Capítulo V: Tactical-Level Software Design
+
+## Bounded Context: Sesion
+
+### Domain Layer
+
+**Entities**
+
+- Sesion
+
+**Interfaces**
+
+- ISesionRepository
+- ISesionService
+
+### Interface Layer
+
+**Controllers**
+
+- SesionsController
+
+### Application Layer
+
+**Command Handlers**
+
+- CrearSesionCommandHandler
+- FinalizarSesionCommandHandler
+
+### Infrastructure Layer
+
+Este bounded context no se comunica con un sistema externo.
+
+### Bounded Context Software Architecture Component Level Diagrams
+
+![](https://gyazo.com/eca8d4e45945bffb986afccc2ee7ebdc.jpg)
+
+### Bounded Context Software Architecture Code Level Diagrams
+
+#### Bounded Context Domain Layer Class Diagrams
+
+![](https://gyazo.com/2c3ec586c6b7df5f556a88975e863cfa.png)
+
+#### Bounded Context Database Design Diagram
+
+![](https://gyazo.com/d999417b427a4ddfddd5a4acf1435ffc.png)
+
+## Bounded Context: Deteccion
+
+### Domain Layer
+
+**Entities**
+
+- Deteccion
+
+**Interfaces**
+
+- IDeteccionRepository
+- IDeteccionService
+
+### Interface Layer
+
+**Controllers**
+
+- DeteccionesController
+
+### Application Layer
+
+**Command Handlers**
+
+- RegistrarDeteccionCommandHandler
+
+### Infrastructure Layer
+
+Este bounded context no se comunica con un sistema externo.
+
+### Bounded Context Software Architecture Component Level Diagrams
+
+![](https://gyazo.com/257486ed212eee44996ece9f4429f548.jpg)
+
+### Bounded Context Software Architecture Code Level Diagrams
+
+#### Bounded Context Domain Layer Class Diagrams
+
+![](https://gyazo.com/ec4f8b23bd86403ff1fee7f507ab1caa.png)
+
+#### Bounded Context Database Design Diagram
+
+![](https://gyazo.com/89501543c83db7f7646e4a0cdcf61295.png)
 
 # Conclusiones
 
