@@ -23,7 +23,7 @@
   <li>Erick Gabriel Urbizagstegui Alvarez (u20201e465)</li>
 </ul>
 
-**<h3>Setiembre, 2024</h3>**
+**<h3>Noviembre, 2024</h3>**
 
 # Registro de Versiones del Informe
 
@@ -31,6 +31,7 @@
 |--------------|--------------|--------------|--------------|
 | 1           | 08/09/2024      | - Andrés Doig Apostol<br>- - Alonso Fernando Robles Astuñaupa<br>- Christian Jose Zeta Valenzuela<br>- Dámaris Jemima Tasayco Vilcamiza<br>- Erick Gabriel Urbizagstegui Alvarez    | Implementación del capítulo 1 al 4.      |
 | 2           | 27/09/2024      | - Andrés Doig Apostol<br>- - Alonso Fernando Robles Astuñaupa<br>- Christian Jose Zeta Valenzuela<br>- Dámaris Jemima Tasayco Vilcamiza<br>- Erick Gabriel Urbizagstegui Alvarez    | Implementación del capítulo 5 al 6. Corrección de errores de la entrega anterior.     |
+| 2           | 02/11/2024      | - Andrés Doig Apostol<br>- - Alonso Fernando Robles Astuñaupa<br>- Christian Jose Zeta Valenzuela<br>- Dámaris Jemima Tasayco Vilcamiza<br>- Erick Gabriel Urbizagstegui Alvarez    | Implementación del capítulo 7. Corrección de errores de la entrega anterior.     |
 
 # Contenido
 
@@ -144,6 +145,27 @@
     - [6.4.3. Application Mock-ups](#643-application-mock-ups)
     - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
   - [6.5. Application Prototyping](#65-application-prototyping)
+- [Capítulo VII: Product Implementation, Validation \& Deployment](#capítulo-vii-product-implementation-validation--deployment)
+  - [7.1. Software Configuration Management](#71-software-configuration-management)
+    - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+    - [7.1.2. Source Code Management](#712-source-code-management)
+    - [7.1.3. Source Code Style Guide \& Conventions](#713-source-code-style-guide--conventions)
+    - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+  - [7.2. Solution Implementation](#72-solution-implementation)
+    - [7.2.1. Sprint 1](#721-sprint-1)
+      - [7.2.1.1. Sprint Planning 1.](#7211-sprint-planning-1)
+      - [7.2.1.2. Sprint Backlog 1.](#7212-sprint-backlog-1)
+      - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+      - [7.2.1.4. Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+      - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+      - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+      - [7.2.1.7. Software Deployment Evidence for Sprint Review.](#7217-software-deployment-evidence-for-sprint-review)
+      - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+  - [7.3. Validation Interviews](#73-validation-interviews)
+    - [7.3.1. Diseño de entrevistas](#731-diseño-de-entrevistas)
+    - [7.3.2. Registro de Entrevistas.](#732-registro-de-entrevistas)
+    - [7.3.3. Evaluaciones según heurísticas.](#733-evaluaciones-según-heurísticas)
+    - [7.4. Video About-the-Product.](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -152,8 +174,8 @@
 
 | Criterio Específico | Acciones realizadas | Conclusiones |
 |---------|---------|---------|
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4.<br><br> **TP1** <br><br> **Andrés Doig Apostol** <br> Durante el proyecto, he presentado los resultados de manera clara y objetiva, adaptando mi lenguaje a diferentes especialidades y niveles jerárquicos, facilitando así la comprensión y toma de decisiones. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el diseño de wireframes y mockups del landing page y de la aplicación principal de nuestra solución de software. <br><br> **Christian Jose Zeta Valenzuela** <br> Apoyó en la creación de diseños de puntos claves de nuestra solución, como el landing page y la aplicación principal. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Durante el proyecto, he presentado los resultados de los sistemas de etiquetado, navegación, búsqueda y SEO de manera clara y objetiva, utilizando un lenguaje apropiado para que todos los participantes pudieran comprender y aportar en la toma de decisiones efectivas. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realicé los diagramas de código de los bounded context. Para esto tuve que identificar los entities principales y los commandhandlers que se usarían. Asimismo, creé los diagramas de contenedores para cada bounded context. | <br><br>**TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución.<br><br>**TP1** <br><br> Se realizaron los capítulos 5 y 6. Esto conllevó a elaborar diseños de bajo nivel de cómo estarían compuestas las clases que constituirían los bounded contexts, así como crear los diseños de bases de datos. Asimismo, se pensó y materializó el diseño del landing page y la aplicación principal de nuestra solución de software. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4.<br><br> **TP1** <br><br> **Andrés Doig Apostol** <br> He redactado informes técnicos con un lenguaje accesible y preciso, asegurando que todos los involucrados comprendan los resultados y avances del proyecto, independientemente de su especialidad o posición. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el diseño de wireframes y mockups del landing page y de la aplicación principal de nuestra solución de software. <br><br> **Christian Jose Zeta Valenzuela** <br> Apoyó en la creación de diseños de puntos claves de nuestra solución, como el landing page y la aplicación principal. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> He redactado descripciones técnicas sobre los sistemas de etiquetado, navegación, búsqueda y SEO con un lenguaje claro y conciso, garantizando que todos los participantes puedan entender los resultados de los sistemas previamente mencionados fomentando una colaboración más efectiva.<br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realicé los diagramas de código de los bounded context. Para esto tuve que identificar los entities principales y los commandhandlers que se usarían. Asimismo, creé los diagramas de contenedores para cada bounded context. | **TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución.<br><br>**TP1** <br><br> Se realizaron los capítulos 5 y 6. Esto conllevó a elaborar diseños de bajo nivel de cómo estarían compuestas las clases que constituirían los bounded contexts, así como crear los diseños de bases de datos. Asimismo, se pensó y materializó el diseño del landing page y la aplicación principal de nuestra solución de software. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4.<br><br> **TP1** <br><br> **Andrés Doig Apostol** <br> Durante el proyecto, he presentado los resultados de manera clara y objetiva, adaptando mi lenguaje a diferentes especialidades y niveles jerárquicos, facilitando así la comprensión y toma de decisiones. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el diseño de wireframes y mockups del landing page y de la aplicación principal de nuestra solución de software. <br><br> **Christian Jose Zeta Valenzuela** <br> Apoyó en la creación de diseños de puntos claves de nuestra solución, como el landing page y la aplicación principal. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Durante el proyecto, he presentado los resultados de los sistemas de etiquetado, navegación, búsqueda y SEO de manera clara y objetiva, utilizando un lenguaje apropiado para que todos los participantes pudieran comprender y aportar en la toma de decisiones efectivas. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realicé los diagramas de código de los bounded context. Para esto tuve que identificar los entities principales y los commandhandlers que se usarían. Asimismo, creé los diagramas de contenedores para cada bounded context. <br><br> **TB2** <br><br> **Andrés Doig Apostol** <br> Elaboré todo el condiguration management para el proyecto. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Elaboré los apartados ¿Quiénes Somos? y Contáctanos del landing page. <br><br> **Christian Jose Zeta Valenzuela** <br> Elaboré los apartados Producto y Enfoque del landing page. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Gestioné las reuniones para los sprints, así como el sprint planning y la documentación de este. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Creé el proyecto del landing page, configuré sus estilos y elaboré el apartado Inicio.  | **TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución.<br><br>**TP1** <br><br> Se realizaron los capítulos 5 y 6. Esto conllevó a elaborar diseños de bajo nivel de cómo estarían compuestas las clases que constituirían los bounded contexts, así como crear los diseños de bases de datos. Asimismo, se pensó y materializó el diseño del landing page y la aplicación principal de nuestra solución de software.<br><br>**TB2** <br><br> Se materializó el diseño pensado para el landing page. Para esto se establecieron reglas y se documentó todo el proceso. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | <br><br> **TB1** <br><br> **Andrés Doig Apostol** <br> Realizó el capítulo 1, identificando la problemática y necesidades de nuestro negocio. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el capítulo 2 del informe, teniendo que analizar el cómo serían las entrevistas y quiénes son nuestros competidores <br><br> **Christian Jose Zeta Valenzuela** <br> Realizó el capítulo 4 del informe, explicando el propósito del diseño, las herramientas usadas y las restricciones que tendrá el proyecto. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Realizó el capítulo 4, pensando en las User Stories y catalogándolas según su prioridad. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realizó el capítulo 4 del informe, diseñando los bounded contexts del sistema y su arquitectura siguiendo el modelo C4.<br><br> **TP1** <br><br> **Andrés Doig Apostol** <br> Durante el proyecto, he presentado los resultados de manera clara y objetiva, adaptando mi lenguaje a diferentes especialidades y niveles jerárquicos, facilitando así la comprensión y toma de decisiones. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Realizó el diseño de wireframes y mockups del landing page y de la aplicación principal de nuestra solución de software. <br><br> **Christian Jose Zeta Valenzuela** <br> Apoyó en la creación de diseños de puntos claves de nuestra solución, como el landing page y la aplicación principal. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Durante el proyecto, he presentado los resultados de los sistemas de etiquetado, navegación, búsqueda y SEO de manera clara y objetiva, utilizando un lenguaje apropiado para que todos los participantes pudieran comprender y aportar en la toma de decisiones efectivas. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Realicé los diagramas de código de los bounded context. Para esto tuve que identificar los entities principales y los commandhandlers que se usarían. Asimismo, creé los diagramas de contenedores para cada bounded context. <br><br> **TB2** <br><br> **Andrés Doig Apostol** <br> Elaboré todo el condiguration management para el proyecto. <br><br> **Alonso Fernando Robles Astuñaupa** <br> Elaboré los apartados ¿Quiénes Somos? y Contáctanos del landing page. <br><br> **Christian Jose Zeta Valenzuela** <br> Elaboré los apartados Producto y Enfoque del landing page. <br><br> **Dámaris Jemima Tasayco Vilcamiza** <br> Gestioné las reuniones para los sprints, así como el sprint planning y la documentación de este. <br><br> **Erick Gabriel Urbizagastgui Alvarez** <br> Creé el proyecto del landing page, configuré sus estilos y elaboré el apartado Inicio.  | **TB1** <br><br> Se realizaron los capítulos del 1 al 4, pensando desde qué oproblemática atacaríamos y cómo, hasta cómo plantearíamos la arquitectura de nuestra solución.<br><br>**TP1** <br><br> Se realizaron los capítulos 5 y 6. Esto conllevó a elaborar diseños de bajo nivel de cómo estarían compuestas las clases que constituirían los bounded contexts, así como crear los diseños de bases de datos. Asimismo, se pensó y materializó el diseño del landing page y la aplicación principal de nuestra solución de software.<br><br>**TB2** <br><br> Se materializó el diseño pensado para el landing page. Para esto se establecieron reglas y se documentó todo el proceso. |
 
 # Capítulo I: Introducción
 
@@ -1066,6 +1088,165 @@ Para una mejor visualización, ir al siguiente link:
 ![](https://gyazo.com/7894c71dbcef7c36a88b3f76069f2dc5.png)
 
 Link del prototipo en Figma: [https://www.figma.com/proto/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=16-4383&node-type=canvas&t=tpuo3uapfiCQ5Iu8-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A137&starting-point-node-id=16%3A4383&share=1](https://www.figma.com/proto/xGWa7By4YRaokcp1bqquCT/Wireframes-and-Mock-ups?node-id=16-4383&node-type=canvas&t=tpuo3uapfiCQ5Iu8-1&scaling=scale-down&content-scaling=fixed&page-id=3%3A137&starting-point-node-id=16%3A4383&share=1)
+
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+## 7.1. Software Configuration Management
+
+### 7.1.1. Software Development Environment Configuration
+
+Se utilizarán herramientas específicas para cada fase del proyecto, cubriendo desde la planificación hasta la implementación y pruebas. A continuación, se presenta la configuración del entorno de desarrollo:
+
+![](https://gyazo.com/8cfca52c4d78a051036786ce32d5dd6c.png)
+
+### 7.1.2. Source Code Management
+
+Se implementará GitHub como plataforma principal para la gestión del código fuente y seguimiento de cambios, utilizando el flujo de trabajo GitFlow.
+- Ramas principales:
+  - main: Contendrá versiones estables listas para producción.
+  - develop: Utilizada para integrar características en desarrollo.
+- Ramas adicionales:
+  - feature/nombre-feature: Para nuevas funcionalidades.
+  - release/número-versión: Preparación de versiones para despliegue.
+  - hotfix/nombre-hotfix: Corrección de errores críticos en producción.
+  
+**Convenciones de commits:**
+Se aplicarán Conventional Commits con mensajes descriptivos.
+Ejemplo:
+- bash
+- Code kopieren
+- feat(UI): Add login feature for users
+- fix(api): Resolve issue with authentication
+
+**Control de versiones semánticas:**
+Se seguirá el esquema Semantic Versioning 2.0.0 para numeración de versiones, por ejemplo, v1.0.0.
+
+### 7.1.3. Source Code Style Guide & Conventions
+
+El estilo del código debe seguir las convenciones estándar para asegurar legibilidad y mantenibilidad:
+- Lenguajes utilizados:
+  - Python: PEP8
+  - TypeScript: Google TypeScript Style Guide
+  - Gherkin: Conventions for Readable Specifications
+  - SQL: Estilo en mayúsculas para comandos.
+- Nomenclatura:
+  - Todo el código se escribirá en inglés para mantener consistencia y facilitar la colaboración.
+    
+    Ejemplo:
+    - Variables: user_email, total_amount
+    - Funciones: calculateTotal(), getUserInfo()
+
+### 7.1.4. Software Deployment Configuration
+
+El despliegue de la solución se realizará utilizando procesos manuales, garantizando control y calidad. A continuación, se detallan los pasos para el despliegue:
+
+**Preparación del entorno de despliegue**: Clonar el repositorio del proyecto desde GitHub.
+
+- git clone <URL_del_repositorio>
+- cd <nombre_proyecto>
+
+**Instalación de dependencias**: Ejecutar los comandos necesarios para instalar las dependencias.
+
+- npm install  # En caso de usar Node.js
+- pip install -r requirements.txt  # En caso de usar Python
+
+**Ejecución de pruebas**: Verificar que todas las pruebas pasen antes del despliegue.
+
+- npm test  # Pruebas para Node.js
+- pytest tests/  # Pruebas en Python
+
+**Despliegue en el entorno de producción**:
+- Subir los archivos necesarios al servidor.
+- Configurar la base de datos PostgreSQL y verificar las conexiones.
+- Asegurarse de que la interfaz gráfica (desarrollada con PyQt6) funcione correctamente.
+
+**Validación**:
+Realizar pruebas finales en el entorno de producción para asegurar que todos los componentes funcionen como se espera.
+
+**Diagrama de Despliegue (Modelo C4)**:
+En el Deployment Diagram se muestra cómo interactúan los componentes del sistema, incluyendo:
+- Aplicación de escritorio: Utiliza PyQt6.
+- Base de datos: PostgreSQL.
+- Servicios backend: API RESTful para la comunicación entre los componentes.
+
+Este proceso de despliegue manual asegura que cada paso sea validado cuidadosamente, minimizando riesgos antes de la puesta en producción.
+
+Github: [https://github.com/NewMinds-FacialTruth](https://github.com/NewMinds-FacialTruth)
+
+Landing Page: [https://facial-truth-landing.vercel.app/](https://facial-truth-landing.vercel.app/)
+
+## 7.2. Solution Implementation
+
+### 7.2.1. Sprint 1
+
+#### 7.2.1.1. Sprint Planning 1.
+
+![](https://gyazo.com/b16df6eab64e570c1be705b74975c46f.png)
+
+#### 7.2.1.2. Sprint Backlog 1.
+
+![](https://gyazo.com/cd8fcb22663f28375fde9f85695e73c2.png)
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+![](https://gyazo.com/36a14b958173a9ca8704cc268325f580.png)
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+**No aplica debido a que en esta entrega se realizó el landing page.**
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+Durante este sprint, nos enfocamos en completar el landing page y el prototipo de la aplicación.
+
+![](https://gyazo.com/dadc4d49edc9e9c79df346577b37d5f9.png)
+![](https://gyazo.com/6d81437e86f4596b50fb1ff55980cfca.png)
+![](https://gyazo.com/fb74400da83f440e2bf8fc6f048a3c3d.png)
+![](https://gyazo.com/ac0221eddcb6345cf6b8561bae9d5248.png)
+![](https://gyazo.com/123aa66fc1d4bd0d1ca2c0eef1c45822.png)
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+**Para este primer Sprint no fue contemplada la evidencia de la documentación de nuestros servicios.**
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review.
+
+Para este primer avance, el cual abarcaba la landing page, y el prototipado de la aplicación en Figma, se llevó a cabo un despliegue de la landing page por medio de Vercel.
+
+![](https://gyazo.com/e10001c7e00e186b3dcaf5b1325d7531.png)
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+![](https://gyazo.com/4b23826d065bbbe3bfca62a7a5b73e85.png)
+
+## 7.3. Validation Interviews
+
+### 7.3.1. Diseño de entrevistas
+
+Preguntas a empresarios
+- Después de conocer el funcionamiento de FacialTruth, ¿en qué aspectos de su proceso actual de evaluación de productos cree que esta herramienta podría aportar más valor?
+- ¿Considera que FacialTruth podría mejorar la precisión y objetividad en sus estudios de mercado? ¿Qué tan importante le parece contar con datos emocionales objetivos en su industria?
+- ¿Cómo percibe el uso de un análisis automatizado de emociones en comparación con métodos tradicionales como focus groups o encuestas?
+- ¿Le resulta interesante la posibilidad de reducir el sesgo humano en la interpretación de emociones? ¿En qué situaciones cree que sería particularmente útil para su empresa?
+- ¿Hasta qué punto cree que FacialTruth podría ayudar a evitar discrepancias entre las emociones capturadas en estudios previos y la reacción del consumidor en el mercado?
+- ¿Qué tipo de resultados específicos le gustaría ver en los reportes de FacialTruth para facilitar su toma de decisiones (por ejemplo, gráficos emocionales, alertas automáticas, comparativas)?
+- ¿Cómo se imagina integrando una herramienta de análisis de emociones en tiempo real como FacialTruth en su proceso de lanzamiento de productos?
+- ¿Qué nivel de aceptación cree que tendría FacialTruth en su sector? ¿Le parece que otros empresarios podrían encontrarla útil?
+- ¿Cree que contar con datos emocionales más precisos y objetivos a través de FacialTruth podría impactar significativamente sus estrategias de mercado?
+- ¿Qué expectativas tiene respecto al impacto de FacialTruth en su empresa a largo plazo en términos de acercamiento y adaptación a las necesidades de sus consumidores?
+
+### 7.3.2. Registro de Entrevistas.
+
+**No aplica debido a que, en este sprint, el producto aun no está terminado.**
+
+### 7.3.3. Evaluaciones según heurísticas.
+
+**No aplica debido a que, en este sprint, el producto aun no está terminado.**
+
+### 7.4. Video About-the-Product.
+
+![](https://gyazo.com/d2c0dacfa350681cfcaf7ec59b1fe76d.png)
+Video About the Product: [https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EVFXBQnq_-BLignUCthDiwEB4lYGDTPfGhdijpTuGdc3Hw?e=swhzbW&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201e465_upc_edu_pe/EVFXBQnq_-BLignUCthDiwEB4lYGDTPfGhdijpTuGdc3Hw?e=swhzbW&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 # Conclusiones
 
